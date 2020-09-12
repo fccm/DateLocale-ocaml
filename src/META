@@ -1,0 +1,6 @@
+description = "Localisation for dates"
+version = "0.0.1"
+archive(byte) = "DateLocale.cma"
+archive(native) = "DateLocale.cmxa"
+plugin(byte) = "DateLocale.cma"
+plugin(native) = "DateLocale.cmxs"

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+name: "DateLocale"
+authors: "Florent Monnier"
+maintainer: "Florent Monnier"
+homepage: "https://github.com/fccm/DateLocale-ocaml/"
+doc: "http://fccm.github.io/DateLocale-ocaml/"
+bug-reports: "https://github.com/fccm/DateLocale-ocaml/issues"
+dev-repo: "git+https://github.com/fccm/DateLocale-ocaml.git"
+synopsis: "Localisation for dates"
+tags: [ "localisation" "localization" "dates" ]
+description: """
+Localisation for dates
+
+Provides months names and days names in various languages.
+"""
+depends: [
+  "ocaml"
+  "ocamlfind" {build}
+]
+build: [
+  [make "-C" "src"]
+  [make "-C" "src" "opt"]
+]
+install: [
+  [make "-C" "src" "findinstall"]
+]
