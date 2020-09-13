@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="DateLocale" rel="Chapter" href="DateLocale.html"><title>DateLocale</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_DateLocale.html">DateLocale</a></h1>
+
+<pre><span id="MODULEDateLocale"><span class="keyword">module</span> DateLocale</span>: <code class="code">sig</code> <a href="DateLocale.html">..</a> <code class="code">end</code></pre><hr width="100%">
+
+<pre><code><span id="TYPEdate_words"><span class="keyword">type</span> <code class="type"></code>date_words</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTdate_words.Months"><span class="constructor">Months</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTdate_words.Days"><span class="constructor">Days</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTdate_words.Days_abbr"><span class="constructor">Days_abbr</span></span></code></td>
+<td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
+<div class="info-desc">
+<p>abbreviated days</p>
+</div>
+</div>
+</td><td class="typefieldcomment" align="left" valign="bottom" ><code>*)</code></td>
+</tr></table>
+
+
+
+<pre><span id="VALget_date_words"><span class="keyword">val</span> get_date_words</span> : <code class="type">string -> <a href="DateLocale.html#TYPEdate_words">date_words</a> -> string array</code></pre><div class="info ">
+<div class="info-desc">
+<p>returns months, week days names or abbreviated days for the required
+    language (given its lang-code)</p>
+
+<p>days are returned with monday first</p>
+</div>
+</div>
+
+<pre><span id="VALget_months"><span class="keyword">val</span> get_months</span> : <code class="type">string -> string array</code></pre>
+<pre><span id="VALget_days"><span class="keyword">val</span> get_days</span> : <code class="type">string -> string array</code></pre><div class="info ">
+<div class="info-desc">
+<p>days are returned with monday first</p>
+</div>
+</div>
+
+<pre><span id="VALget_days_abbr"><span class="keyword">val</span> get_days_abbr</span> : <code class="type">string -> string array</code></pre><div class="info ">
+<div class="info-desc">
+<p>days are returned with monday first</p>
+</div>
+</div>
+
+<pre><span id="VALget_calendar_word"><span class="keyword">val</span> get_calendar_word</span> : <code class="type">string -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p>returns the word "calendar" in different languages</p>
+</div>
+</div>
+
+<pre><span id="VALget_lang_word"><span class="keyword">val</span> get_lang_word</span> : <code class="type">string -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p>returns the word for the name of a language in this language</p>
+</div>
+</div>
+
+<pre><span id="VALsunday_first"><span class="keyword">val</span> sunday_first</span> : <code class="type">string array -> string array</code></pre><div class="info ">
+<div class="info-desc">
+<p>switch the days of the week with sunday first</p>
+</div>
+</div>
+</body></html>
