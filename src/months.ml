@@ -219,6 +219,16 @@ let months_lang = [
     "mayo"; "junio"; "julio"; "agosto";
     "septiembre"; "octubre"; "noviembre"; "diciembre";
   |];
+  "es_PE", [|
+    "enero"; "febrero"; "marzo"; "abril";
+    "mayo"; "junio"; "julio"; "agosto";
+    "setiembre"; "octubre"; "noviembre"; "diciembre";
+  |];
+  "es_UY", [|
+    "enero"; "febrero"; "marzo"; "abril";
+    "mayo"; "junio"; "julio"; "agosto";
+    "setiembre"; "octubre"; "noviembre"; "diciembre";
+  |];
   "et", [|
     "jaanuar"; "veebruar"; "märts"; "aprill";
     "mai"; "juuni"; "juuli"; "august";
@@ -828,9 +838,6 @@ let months_lang = [
     "Janeiro"; "Fevreiro"; "Marco"; "Abril";
     "Maio"; "Junho"; "Julho"; "Augusto";
     "Setembro"; "Otubro"; "Novembro"; "Decembro";
-  |];
-  "ses", [|
-   
   |];
   "ses", [|
     "Žanwiye"; "Feewiriye"; "Marsi"; "Awiril";
